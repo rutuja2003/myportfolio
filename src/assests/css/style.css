@@ -1,0 +1,343 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+/* 
+body {
+  background: #983434;
+  background: -webkit-linear-gradient(to left, #4b65e3, #78d763);
+  background: linear-gradient(to left, #9c3eae, #9a3737);
+
+} */
+
+body{
+  background: #3a6186;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.my__nav {
+  z-index: 1;
+  background: -webkit-linear-gradient(to left, #130F40, #000000);
+  background: linear-gradient(to left, #130F40, #000000);
+}
+
+.gradient__class {
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.nav__heading {
+  font-size: 40px;
+}
+
+.typewriter {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#home :first-child {
+  margin-top: 100px;
+}
+
+#about {
+  padding: 20vh 0px !important;
+  border-radius: 50%;
+}
+
+/* #education{
+  padding: 100px 0px;
+}
+
+#experience {
+  padding: 100px 0px;
+} */
+
+.vertical {
+  border-left: 2px solid green;
+  margin-left: 7px;
+  padding-left: 20px;
+}
+
+.skill {
+  cursor: pointer;
+
+}
+
+.footer {
+  padding: 20px 30px;
+  background-color: #130F40;
+  border-top: 2px solid black;
+}
+
+
+
+
+
+.my__card {
+  border-radius: 30px;
+
+}
+
+@media screen and (max-width:768px) {
+  #home {
+    margin-top: 100px;
+  }
+
+  #home :first-child {
+    margin-top: 0px;
+  }
+
+  .typewriter {
+    min-height: 30vh;
+  }
+}
+
+
+
+/* flip image */
+.flip-card {
+  /* background-color: transparent; */
+  /* width: 300px; */
+  height: 300px;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #130F40;
+  border-radius: 20px;
+  padding: 15px 10px;
+  display: grid;
+  place-items: center;
+  transform: rotateY(180deg);
+}
+
+
+.circular_progress {
+  position: relative;
+  height: 120px;
+  width: 120px;
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+.social {
+  position: fixed;
+  top: 40%;
+}
+
+.social__items {
+  background-color: #130F40;
+  padding: 5px 10px;
+  border-radius: 10px;
+  width: 60px;
+  margin-right: 50px;
+  z-index: 999;
+  transition: 0.5s;
+
+}
+
+.social__items a img {
+  transition: 0.4s ease;
+}
+
+
+.social__items a img:hover {
+  transform: scale(1.2);
+}
+
+.social__items a img {
+  margin: 10px 0px;
+}
+
+.social__button {
+  cursor: pointer;
+  margin-right: 50px;
+  margin-top: 8px;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  transition: 0.5s ease-out;
+}
+
+.rotate {
+  transform: rotate(0.5turn);
+}
+@keyframes bounce {
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      transform: translate3d(0, 100px, 0);
+  }
+}
+
+.bounce {
+  animation: bounce 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  background-size:auto;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* images */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
